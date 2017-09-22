@@ -1,6 +1,6 @@
 name: PasswordGroup
 main: de.selebrator.pwgroup.Main
-version: indev
+version: 1.0.0-beta
 authors: [Selebrator]
 depend: [Vault]
 commands:
