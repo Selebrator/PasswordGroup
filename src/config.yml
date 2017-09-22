@@ -1,8 +1,35 @@
-password: 'passwort'
+# PasswordGroup default configuration by Selebrator
+#
+# password: passwort
+# message_deny: §4You may not enter this command.
+# message_success: §aYou have successfully entered the password.
+# message_wrong: §cYou have entered a wrong password.
+# message_user: §cOnly players may use the /pw command.
+# permission_deny: pwgroup.deny
+# groups:
+# - user
+
+password: passwort
+# Password to enter with /pw <password>.
+
+
+message_deny: §4You may not enter this command.
+# Message you get if you have the permission_deny.
+
+message_success: §aYou have successfully entered the password.
+# Message you get after entering the correct password.
+
+message_wrong: §cYou have entered a wrong password.
+# Message you get if you enter the wrong password.
+
+message_user: §cOnly players may use the /pw command.
+# Message you get if not entered by user.
+
+
+permission_deny: pwgroup.deny
+# Permission to deny the /pw command.
+# May use for groups higher than the group that shall use the password.
+
 groups:
-  - 'user'
-permission_deny: 'pwgroup.deny'
-message_user: '§cOnly players may use the /pw command.'
-message_deny: '§4You may not enter this command.'
-message_wrong: '§cYou have entered a wrong password.'
-message_success: '§aYou have successfully entered the password.'
+- user
+# Groups that the player will be added to.
