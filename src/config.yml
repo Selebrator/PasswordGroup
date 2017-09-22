@@ -1,0 +1,8 @@
+password: 'passwort'
+groups:
+  - 'user'
+permission_deny: 'pwgroup.deny'
+message_user: '§cOnly players may use the /pw command.'
+message_deny: '§4You may not enter this command.'
+message_wrong: '§cYou have entered a wrong password.'
+message_success: '§aYou have successfully entered the password.'

@@ -1,0 +1,12 @@
+name: PasswordGroup
+main: de.selebrator.pwgroup.Main
+version: indev
+authors: [Selebrator]
+depend: [Vault]
+commands:
+  password:
+    aliases:
+      - pw
+      - passwort
+    usage: |
+           /<command> <password>
