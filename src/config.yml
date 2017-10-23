@@ -15,8 +15,14 @@ message_deny: "§4You may not enter this command."
 #Message you get after entering the correct password.
 message_success: "§aYou have successfully entered the password."
 
+#Message broadcast to everyone with the permission 'password.notify.success' when a player enters the correct password
+message_success_notify: "%player_displayname%§r §eentered the correct password"
+
 #Message you get if you enter the wrong password.
 message_wrong: "§cYou have entered a wrong password."
+
+#Message broadcast to everyone with the permission 'password.notify.wrong' when a player enters an incorrect password
+message_wrong_notify: "%player_displayname%§r §etryed to enter §r%input%§r §eas the password"
 
 #Message you get if not entered by a player.
 message_user: "§cOnly players may use the /pw command."

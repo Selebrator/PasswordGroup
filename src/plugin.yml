@@ -1,6 +1,6 @@
 name: PasswordGroup
 main: de.selebrator.pwgroup.Main
-version: 1.0.0-beta
+version: 1.1.0-beta
 authors: [Selebrator]
 depend: [Vault]
 commands:
@@ -10,3 +10,13 @@ commands:
       - passwort
     usage: |
            /<command> <password>
+permissions:
+  password.notify.*:
+    description: Get notified when a player enters a password regardless of correctness
+    children:
+      password.notify.success: true
+      password.notify.wrong: true
+  password.notify.sucess:
+    description: Get notified when a player enters the correct password
+  password.notify.wrong:
+    description: Get notified when a player enters an incorrect password
