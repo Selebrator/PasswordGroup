@@ -57,6 +57,9 @@ public class Main extends JavaPlugin {
 
 		if(args.length == 1) {
 			if(args[0].equalsIgnoreCase(this.password)) {
+				for(String group : permission.getPlayerGroups(player))
+					permission.playerRemoveGroup(null, player, group);
+
 				for(String group : this.groups)
 					permission.playerAddGroup(null, player, group);
 				player.sendMessage(this.message_success);
@@ -65,7 +68,7 @@ public class Main extends JavaPlugin {
 						.replaceAll("%player_displayname%", player.getDisplayName())
 						.replaceAll("%player_name%", player.getName());
 
-				this.notify(notification, sender, "password.notify.success");
+				this.notify(notification, sender, "pwgroup.notify.success");
 				return true;
 			} else {
 				player.sendMessage(this.message_wrong);
@@ -75,7 +78,7 @@ public class Main extends JavaPlugin {
 						.replaceAll("%player_name%", player.getName())
 						.replaceAll("%input%", args[0]);
 
-				this.notify(notification, sender, "password.notify.wrong");
+				this.notify(notification, sender, "pwgroup.notify.wrong");
 				return true;
 			}
 		}

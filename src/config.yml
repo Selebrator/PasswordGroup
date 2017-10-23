@@ -5,7 +5,7 @@ password: passwort
 #May use for groups higher than the group that shall use the password.
 permission_deny: pwgroup.deny
 
-#List of groups that the player will be added to.
+#List of groups that the player will be set to. They will be in no other groups than these.
 groups:
   - user
 
